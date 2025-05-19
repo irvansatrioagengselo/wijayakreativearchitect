@@ -1,0 +1,94 @@
+/* Mengimpor font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Pengaturan umum untuk body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pengaturan untuk Navbar */
+nav {
+    background-color: #5e82fa;
+    padding: 10px 20px;
+    
+}
+
+/* Footer */i
+footer {
+    background-color: #5e82fa;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+footer a.nav-link {
+    color: #fff;
+}
+
+/* Section Produk */
+section.produk {
+    min-height: 90vh;
+    padding-bottom: 20px;
+}
+
+.produk .card img {
+    width: 100%;
+    height: auto; /* Mengubah height menjadi auto agar gambar tidak terdistorsi */
+    object-fit: cover;
+}
+
+.produk .card-title,
+.produk .hargasize {
+    min-height: 45px; /* Menggunakan min-height untuk fleksibilitas tinggi konten */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.produk .card-title {
+    font-size: 1.2em;
+    line-height: 45px;
+}
+
+.produk .hargasize {
+    font-weight: bold;
+    line-height: 45px;
+}
+
+/* Mengatur box-sizing global untuk memastikan layout konsisten */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Maps Button Styles */
+.maps-button-container {
+    display: flex;
+    justify-content: center; /* Menjaga tombol tetap di tengah */
+    margin-top: 20px;
+}
+
+.maps-button {
+    display: block; /* Membuat tombol menjadi elemen block sehingga memanjang */
+    width: 100%; /* Tombol akan memanjang sepanjang lebar kontainer */
+    max-width: 500px; /* Menentukan lebar maksimal tombol */
+    padding: 15px 30px; /* Memperbesar padding untuk tampilan yang lebih baik */
+    background-color: #2e4123; /* Warna biru untuk tombol */
+    color: rgb(154, 26, 26);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Ukuran font lebih besar agar lebih terlihat */
+    display: flex; /* Menjaga teks dan ikon berada dalam satu baris */
+    align-items: center; /* Menjaga teks dan ikon terpusat secara vertikal */
+    justify-content: center; /* Menjaga konten di tengah */
+    transition: background-color 0.3s ease; /* Transisi saat hover */
+}
+
+.maps-button i {
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+    font-size: 20px; /* Ukuran ikon lebih besar */
+}
+
+.maps-button:hover {
+    background-color: #0056b3; /* Mengubah warna biru menjadi lebih gelap saat hover */
+}
